@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -55,47 +55,47 @@
                 <thead>
 					<tr>
 						<th>
-							Prénom
+							Nom
 						</th>
 						<th>
-							Nom
+							Prénom
 						</th>
 					</tr>
                 </thead>
                 <tbody id="tblClients">
 					<tr id="MargueriteTallmann">
 						<td>
-							Marguerite
+							Tallmann
 						</td>
 						<td>
-							Tallmann
+							Marguerite
 						</td>
 					</tr>
 					<tr id="PaulDupont">
 						<td>
-							Paul
+							Dupont
 						</td>
 						<td>
-							Dupont
+							Paul
 						</td>
                     </tbody>
 			</table>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<label class="col-sm-3 control-label">
 				Choisir le client
 			</label>
             <form>
                 <select id="listeDeroulante" onchange="afficher()">
                     <option></option>
-                    <option>Marguerite Tallmann</option>
-                    <option>Paul Dupont</option>
+                    <option id="MargueriteTallman">Tallmann Marguerite</option>
+                    <option id="PaulDupont">Dupont Paul</option>
                 </select>
             </form>
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-6">
 		</div>
 	</div>
 	<div class="row">
@@ -106,7 +106,7 @@
 						Nom
 					</label>
 					<div class="col-sm-10">
-						<input class="form-control" id="NomASupprimer">
+						<input class="form-control" id="NomASupprimer" readonly="true">
 					</div>
 				</div>
 			</form>
@@ -118,7 +118,7 @@
 						Prénom
 					</label>
 					<div class="col-sm-10">
-						<input class="form-control" id="PrenomASupprimer">
+						<input class="form-control" id="PrenomASupprimer" readonly="true">
 					</div>
 				</div>
 			</form>
