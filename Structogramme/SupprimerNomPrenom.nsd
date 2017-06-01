@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root text="&#34;SupprimerNomPrenom()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;var SupprimerNom = la valeur de PrenomASupprimer&#34;,&#34;var SupprimerPrenom = la valeur de NomASupprimer&#34;,&#34;var Informations = SupprimerNom + SupprimerPrenom&#34;,&#34;var element = Informations&#34;,&#34;supprime l'ID de la valeur d'element&#34;,&#34;var listeDeroulante = l'id ListeDeroulante&#34;,&#34;suprime l'onglet actif de ListeDeroulante&#34;,&#34;la valeur de l'id PrenomASupprimer = &#34;&#34;&#34;&#34;&#34;,&#34;la valeur de l'id NomASupprimer = &#34;&#34;&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>
