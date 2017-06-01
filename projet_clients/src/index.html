@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -44,26 +44,26 @@
 		</div>
 		<div class="col-md-6">
 			 
-			<button type="button" onclick="FonctionBoutonAjout()" class="btn btn-default">
+			<button type="button" onclick="FonctionBoutonAjout()" class="btn btn-default" value="button">
 				Ajouter
 			</button>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<table class="table">
-				<thead>
+			<table class="table" id="tableClients">
+                <thead>
 					<tr>
-						<th>
-							Nom
-						</th>
 						<th>
 							Prénom
 						</th>
+						<th>
+							Nom
+						</th>
 					</tr>
-				</thead>
-				<tbody>
-					<tr>
+                </thead>
+                <tbody id="tblClients">
+					<tr id="MargueriteTallmann">
 						<td>
 							Marguerite
 						</td>
@@ -71,14 +71,14 @@
 							Tallmann
 						</td>
 					</tr>
-					<tr>
+					<tr id="PaulDupont">
 						<td>
 							Paul
 						</td>
 						<td>
 							Dupont
 						</td>
-				</tbody>
+                    </tbody>
 			</table>
 		</div>
 	</div>
@@ -88,10 +88,11 @@
 				Choisir le client
 			</label>
             <form>
-                <SELECT name="nom" size="1">
+                <select id="listeDeroulante" onchange="afficher()">
+                    <option></option>
                     <option>Marguerite Tallmann</option>
                     <option>Paul Dupont</option>
-                </SELECT>
+                </select>
             </form>
 		</div>
 		<div class="col-md-8">
@@ -105,7 +106,7 @@
 						Nom
 					</label>
 					<div class="col-sm-10">
-						<input class="form-control">
+						<input class="form-control" id="NomASupprimer">
 					</div>
 				</div>
 			</form>
@@ -117,14 +118,14 @@
 						Prénom
 					</label>
 					<div class="col-sm-10">
-						<input class="form-control">
+						<input class="form-control" id="PrenomASupprimer">
 					</div>
 				</div>
 			</form>
 		</div>
 		<div class="col-md-6">
 			 
-			<button type="button" class="btn btn-default">
+			<button onclick="supprimerNomPrenom()" type="button" class="btn btn-default">
 				Supprimer
 			</button>
 		</div>
